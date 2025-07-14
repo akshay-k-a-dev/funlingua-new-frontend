@@ -22,7 +22,7 @@ const SuccessStories = () => {
       achievement: "Finale Winner",
       story: "Overcame stage fear to deliver powerful presentations and secured his dream job.",
       category: "Career Success",
-      image: "/src/assets/Vishal.jpg"
+      image: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/Vishal.jpg?raw=true"
     }
   ];
 
