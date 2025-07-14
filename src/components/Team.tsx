@@ -13,7 +13,7 @@ const Team = () => {
       name: "Immanuel Ditto Lopez",
       role: "Financial Strategist & CFO",
       description: "Strategic financial leader ensuring sustainable growth and accessible education for all learners.",
-      image: "/src/assets/ImmanuelDitto.jpg"
+      image: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/ImmanuelDitto.jpg?raw=true"
     }
   ];
 
