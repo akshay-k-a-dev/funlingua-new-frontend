@@ -15,7 +15,7 @@ const SuccessStories = () => {
       achievement: "Finale Winner",
       story: "Led her graduation showcase and now mentors other learners in the community.",
       category: "Leadership",
-      image: "/src/assets/Monisha.jpg"
+      image: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/Monisha.jpg?raw=true"
     },
     {
       name: "Vishal",
