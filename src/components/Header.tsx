@@ -29,7 +29,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
             <img
-              src="/src/assets/logo.jpg"
+              src="https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/logo.jpg?raw=true"
               alt="FunLingua Logo"
               className="h-10 w-auto rounded-lg shadow-sm"
             />
