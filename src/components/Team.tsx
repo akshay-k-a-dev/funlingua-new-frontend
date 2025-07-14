@@ -7,7 +7,7 @@ const Team = () => {
       name: "Biju Simon",
       role: "Social Innovator & Founder",
       description: "Visionary leader dedicated to transforming language education through innovative, inclusive approaches.",
-      image: "/src/assets/BijuSimon.jpg"
+      image: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/Biju%20Simon.JPG?raw=true"
     },
     {
       name: "Immanuel Ditto Lopez",
