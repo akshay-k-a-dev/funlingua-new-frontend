@@ -8,7 +8,7 @@ const Hero = () => {
   
   const heroImages = [
     {
-      src: {hero1},
+      src: "{hero1}",
       alt: "Students learning together - Hero 1"
     },
     {
