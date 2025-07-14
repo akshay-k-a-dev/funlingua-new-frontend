@@ -12,7 +12,7 @@ const Hero = () => {
       alt: "Students learning together - Hero 1"
     },
     {
-      src: "{hero2}", 
+      src: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/Hero2.jpg?raw=true", 
       alt: "Interactive learning session - Hero 2"
     },
     {
