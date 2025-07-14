@@ -28,6 +28,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
+            <img
+              src="/src/assets/logo.jpg"
+              alt="FunLingua Logo"
+              className="h-10 w-auto rounded-lg shadow-sm"
+            />
             <div className="bg-gradient-to-r from-orange-500 to-purple-600 text-white font-bold text-xl px-3 py-2 rounded-lg">
               FunLingua
             </div>

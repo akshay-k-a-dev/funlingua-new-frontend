@@ -7,19 +7,22 @@ const SuccessStories = () => {
       name: "Sminesh",
       achievement: "From 7.5/25 to 20/25",
       story: "Transformed from a hesitant speaker to a confident communicator through our experiential learning approach.",
-      category: "Academic Excellence"
+      category: "Academic Excellence",
+      image: "/src/assets/Sminesh.jpg"
     },
     {
       name: "Monisha",
       achievement: "Finale Winner",
       story: "Led her graduation showcase and now mentors other learners in the community.",
-      category: "Leadership"
+      category: "Leadership",
+      image: "/src/assets/Monisha.jpg"
     },
     {
       name: "Vishal",
       achievement: "Finale Winner",
       story: "Overcame stage fear to deliver powerful presentations and secured his dream job.",
-      category: "Career Success"
+      category: "Career Success",
+      image: "/src/assets/Vishal.jpg"
     }
   ];
 
@@ -58,13 +61,21 @@ const SuccessStories = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {stories.map((story, index) => (
             <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+              {/* Profile Image */}
               <div className="flex items-center mb-6">
-                <div className="bg-gradient-to-r from-orange-500 to-purple-600 p-3 rounded-full mr-4">
-                  <Trophy className="text-white" size={24} />
+                <div className="relative mr-4">
+                  <img
+                    src={story.image}
+                    alt={story.name}
+                    className="w-16 h-16 rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform"
+                  />
+                  <div className="absolute -bottom-1 -right-1 bg-gradient-to-r from-orange-500 to-purple-600 p-2 rounded-full">
+                    <Trophy className="text-white" size={16} />
+                  </div>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800">{story.name}</h3>
-                  <span className="text-orange-600 font-medium">{story.category}</span>
+                  <span className="text-orange-600 font-medium text-sm">{story.category}</span>
                 </div>
               </div>
               
@@ -74,6 +85,15 @@ const SuccessStories = () => {
               </div>
               
               <p className="text-gray-600 leading-relaxed">{story.story}</p>
+              
+              {/* Decorative element */}
+              <div className="mt-4 flex justify-center">
+                <div className="flex space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} className="text-yellow-400 fill-current" />
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
