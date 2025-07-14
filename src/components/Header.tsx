@@ -33,9 +33,6 @@ const Header = () => {
               alt="FunLingua Logo"
               className="h-10 w-auto rounded-lg shadow-sm"
             />
-            <div className="bg-gradient-to-r from-orange-500 to-purple-600 text-white font-bold text-xl px-3 py-2 rounded-lg">
-              FunLingua
-            </div>
           </div>
 
           {/* Desktop Navigation */}
