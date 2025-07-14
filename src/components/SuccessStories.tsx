@@ -8,7 +8,7 @@ const SuccessStories = () => {
       achievement: "From 7.5/25 to 20/25",
       story: "Transformed from a hesitant speaker to a confident communicator through our experiential learning approach.",
       category: "Academic Excellence",
-      image: "/src/assets/Sminesh.jpg"
+      image: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/Sminesh.JPG?raw=true"
     },
     {
       name: "Monisha",
