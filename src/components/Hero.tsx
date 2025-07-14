@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Play, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
-
+import hero1 from '../assets/Hero1.jpg';
+import hero2 from '../assets/Hero2.jpg';
+import hero3 from '../assets/Hero3.jpg';
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const heroImages = [
     {
-      src: "/src/assets/Hero1.jpg",
+      src: {hero1},
       alt: "Students learning together - Hero 1"
     },
     {
