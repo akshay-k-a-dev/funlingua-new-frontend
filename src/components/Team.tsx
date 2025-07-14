@@ -7,13 +7,13 @@ const Team = () => {
       name: "Biju Simon",
       role: "Social Innovator & Founder",
       description: "Visionary leader dedicated to transforming language education through innovative, inclusive approaches.",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+      image: "/src/assets/BijuSimon.jpg"
     },
     {
       name: "Immanuel Ditto Lopez",
       role: "Financial Strategist & CFO",
       description: "Strategic financial leader ensuring sustainable growth and accessible education for all learners.",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop"
+      image: "/src/assets/ImmanuelDitto.jpg"
     }
   ];
 
@@ -22,19 +22,22 @@ const Team = () => {
       name: "Joseph Fernandez",
       role: "Strategic Advisor",
       credentials: "Author, Global Consultant",
-      expertise: "Strategic planning and international education systems"
+      expertise: "Strategic planning and international education systems",
+      image: "/src/assets/Joseph Fernandez.jpg"
     },
     {
       name: "Sabriye Tenberken",
       role: "Empowerment Leader",
       credentials: "Co-founder of kanthari",
-      expertise: "Blind empowerment and inclusive education"
+      expertise: "Blind empowerment and inclusive education",
+      image: "/src/assets/Sabriye Tenberken.webp"
     },
     {
       name: "Satya Kedar Illa",
       role: "Innovation Mentor",
       credentials: "CEO of ASIA, Ecosystem Builder",
-      expertise: "Innovation mentoring and ecosystem development"
+      expertise: "Innovation mentoring and ecosystem development",
+      image: "/src/assets/Satya Illa.jpg"
     }
   ];
 
@@ -83,9 +86,16 @@ const Team = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {mentors.map((mentor, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all text-center">
-                <div className="bg-white/20 p-4 rounded-full w-fit mx-auto mb-4">
-                  <Award className="text-white" size={32} />
+              <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/20 transition-all text-center group">
+                <div className="relative mb-4">
+                  <img
+                    src={mentor.image}
+                    alt={mentor.name}
+                    className="w-20 h-20 rounded-full mx-auto object-cover shadow-lg group-hover:scale-105 transition-transform"
+                  />
+                  <div className="absolute -bottom-2 -right-2 bg-white/20 p-2 rounded-full">
+                    <Award className="text-white" size={16} />
+                  </div>
                 </div>
                 <h4 className="text-xl font-bold text-white mb-2">{mentor.name}</h4>
                 <p className="text-orange-200 font-medium mb-2">{mentor.role}</p>

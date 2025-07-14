@@ -1,17 +1,86 @@
-import React from 'react';
-import { Play, ArrowRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Play, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const heroImages = [
+    {
+      src: "/src/assets/Hero1.jpg",
+      alt: "Students learning together - Hero 1"
+    },
+    {
+      src: "/src/assets/Hero2.jpg", 
+      alt: "Interactive learning session - Hero 2"
+    },
+    {
+      src: "/src/assets/Hero3.jpg",
+      alt: "Confident speakers - Hero 3"
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Image Carousel */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-          alt="Students learning together"
-          className="w-full h-full object-cover"
-        />
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-purple-800/70 to-orange-600/80"></div>
+      </div>
+
+      {/* Carousel Controls */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm p-3 rounded-full hover:bg-white/30 transition-all"
+      >
+        <ChevronLeft className="text-white" size={24} />
+      </button>
+      
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm p-3 rounded-full hover:bg-white/30 transition-all"
+      >
+        <ChevronRight className="text-white" size={24} />
+      </button>
+
+      {/* Carousel Indicators */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+        {heroImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all ${
+              index === currentSlide ? 'bg-white' : 'bg-white/50'
+            }`}
+          />
+        ))}
       </div>
 
       {/* Content */}
