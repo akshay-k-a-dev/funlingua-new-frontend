@@ -12,11 +12,11 @@ const Hero = () => {
       alt: "Students learning together - Hero 1"
     },
     {
-      src: "/src/assets/Hero2.jpg", 
+      src: "{hero2}", 
       alt: "Interactive learning session - Hero 2"
     },
     {
-      src: "/src/assets/Hero3.jpg",
+      src: "{hero3}",
       alt: "Confident speakers - Hero 3"
     }
   ];
