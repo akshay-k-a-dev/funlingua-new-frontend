@@ -86,15 +86,6 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Logo */}
-          <div className="mb-8">
-            <img
-              src="/src/assets/logo.jpg"
-              alt="FunLingua Logo"
-              className="h-20 md:h-24 mx-auto rounded-lg shadow-lg"
-            />
-          </div>
-
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Just Speak.
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
