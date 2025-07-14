@@ -23,21 +23,21 @@ const Team = () => {
       role: "Strategic Advisor",
       credentials: "Author, Global Consultant",
       expertise: "Strategic planning and international education systems",
-      image: "/src/assets/Joseph Fernandez.jpg"
+      image: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/Joseph%20Fernandez.jpg?raw=true"
     },
     {
       name: "Sabriye Tenberken",
       role: "Empowerment Leader",
       credentials: "Co-founder of kanthari",
       expertise: "Blind empowerment and inclusive education",
-      image: "/src/assets/Sabriye Tenberken.webp"
+      image: "https://raw.githubusercontent.com/akshay-k-a-dev/funlingua-new-frontend/refs/heads/main/src/assets/Sabriye%20Tenberken.webp"
     },
     {
       name: "Satya Kedar Illa",
       role: "Innovation Mentor",
       credentials: "CEO of ASIA, Ecosystem Builder",
       expertise: "Innovation mentoring and ecosystem development",
-      image: "/src/assets/Satya Illa.jpg"
+      image: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/Satya%20Illa.jpg?raw=true"
     }
   ];
 
