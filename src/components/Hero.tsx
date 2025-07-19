@@ -20,7 +20,7 @@ const Hero = () => {
       alt: "Confident speakers - Hero 3"
     },
     {
-      src: "https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/Front%20Image%20-4.JPG?raw=true",
+      src: "https://raw.githubusercontent.com/akshay-k-a-dev/funlingua-new-frontend/refs/heads/main/src/assets/Front%20Image%20-4.JPG",
       alt: "Confident speakers - Hero 4"
     },
     {
