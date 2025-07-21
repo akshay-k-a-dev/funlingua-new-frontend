@@ -25,9 +25,14 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <div className="bg-gradient-to-r from-orange-500 to-purple-600 text-white font-bold text-2xl px-4 py-2 rounded-lg w-fit mb-4">
-                FunLingua
-              </div>
+               <div className="flex items-center space-x-4">
+            <img
+              src="https://github.com/akshay-k-a-dev/funlingua-new-frontend/blob/main/src/assets/logo.jpg?raw=true"
+              alt="FunLingua Logo"
+              className="h-10 w-auto rounded-lg shadow-sm"
+            />
+          </div>
+
               <p className="text-gray-300 mb-4 max-w-md">
                 Empowering confident, English-speaking India where language is a bridge to identity and opportunity.
               </p>
