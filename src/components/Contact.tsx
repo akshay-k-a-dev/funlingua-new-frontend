@@ -42,7 +42,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Our Center",
-      info: "Peyad, Thiruvananthapuram",
+      info: "Peyad & Karamana , Thiruvananthapuram",
       action: "https://maps.google.com"
     }
   ];
